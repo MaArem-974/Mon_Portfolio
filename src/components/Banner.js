@@ -1,8 +1,6 @@
 import { useState,useEffect } from "react"
 import { Container,Row,Col } from "react-bootstrap"
-import MonCV from '../assets/res/MonCV.pdf'
-import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from '../assets/img/header-img.svg'
+import headerImg from '../assets/img/DevM.png'
 //import 'animate.css';
 //import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
@@ -11,7 +9,7 @@ export const Banner = () => {
     const toRotate = ["Développeur Web EN HERBE","Etudiant","Bon au jeux-video"];
     const [text,setText] = useState('');
     const[delta,setDelta] = useState(300 - Math.random() * 100)
-    const temps = 2000;
+    const temps = 1000;
 
     const tick = () =>{
         let i = loopNum % toRotate.length;
@@ -31,7 +29,7 @@ export const Banner = () => {
 
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(190);
         }
 
 
@@ -52,13 +50,13 @@ return () => {clearInterval(ticker)};
         <section className="banner" id="acceuil">
             <Container>
                 <Row className="align-item-center">
-                    <Col xs={12} md={6} xl={7} >
+                    <Col xs={12} md={4} xl={7} >
 
                         <span className="tagline">Bienvenue sur mon portfolio</span>
                         <h1>{'Je suis Kéryan MERCADIER et je suis '}<span className="wrap"><div className="TextGen">{text}</div></span></h1>
                         <p>Je suis actuellement en BTS SIO option SLAM et voici mon portfolio</p>
                     </Col>
-                    <Col xs={12} md={6} xl={3}>
+                    <Col xs={10} md={2} xl={4}>
                   <img src={headerImg} alt="Header Img"/>
 
                     </Col>

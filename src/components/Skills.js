@@ -1,13 +1,21 @@
 import { Container,Row,Col } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
 import CircularProgress from "./CircularProgress";
 import { CircularProgressbar,buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-creative";
+import "swiper/css/pagination";
+
+// import required modules
+import { EffectCreative , Pagination, Navigation } from "swiper";
 export const Skills = () => {
 
     
@@ -35,91 +43,120 @@ export const Skills = () => {
       };
 
       return (
-<section className="skill" id="skills">
-    <Container>
+<section className="skill" id="competences">
+<Container>
         <Row>
             <Col>
             <div className="skill-bx">
                 <h2>
                     Compétences
                 </h2>
-                <p>Voici mes Compétences </p>
-            </div>
-            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                <p>Voici mes Compétences dans differents domaines que j'ai appris  </p>
+            
+            <Swiper
+        responsive={responsive}
+        effect={"creative"}
+        grabCursor={true}
+        centeredSlides={true}
+        navigation={true}
+        slidesPerView={"3"}
+        creativeEffect={{
+          prev: {
+            shadow: false,
+            translate: ["-120%", 0, -500],
+          },
+          next: {
+            shadow: false,
+            translate: ["120%", 0, -500],
+          },
+        }}
+        pagination={false}
+        modules={[EffectCreative, Pagination]}
+        className="owl-carousel owl-theme skill-slider" >
+        <SwiperSlide>
               <div className="item">
 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        percentage={70}
+        color="#4A2FBD"
       />
 <h5>PHP</h5>
 </div>
+</SwiperSlide>
 
 
-
-
+<SwiperSlide>
     <div className="item">
     <CircularProgress
         size={240}
         strokeWidth={25}
         percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        color="#4A2FBD"
       />
+      <h5>Java</h5>
                 </div> 
+                </SwiperSlide>
 
-
+                <SwiperSlide>
                 <div className="item">
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        percentage={60}
+        color="#4A2FBD"
       />
                 <h5>HTML</h5>
                 </div> 
+                </SwiperSlide>
 
-
+                <SwiperSlide>
                 <div className="item">
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        percentage={30}
+        color="#4A2FBD"
       />
                 <h5>CSS</h5>
                 </div> 
-
+                </SwiperSlide>
+                <SwiperSlide>
                 <div className="item">
                 <CircularProgress
         size={240}
         strokeWidth={25}
         percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        color="#4A2FBD"
       />
                 <h5>JavaScript</h5>
                 </div> 
 
+                </SwiperSlide>
+                <SwiperSlide>
                 <div className="item">
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        percentage={70}
+        color="#4A2FBD"
       />
                 <h5>SQL</h5>
                 </div> 
-
+                </SwiperSlide>
+                <SwiperSlide>
                 <div className="item">
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
-        color="rgba(211, 3, 252, 1)"
+        percentage={40}
+        color="#4A2FBD"
       />
                 <h5>Docker</h5>
-                </div> 
-            </Carousel>
+                </div>
+                </SwiperSlide> 
+                </Swiper>
+                </div>
             
             </Col>
 
@@ -128,8 +165,12 @@ export const Skills = () => {
         </Row>
 
     </Container>
-    <img className="background-image-left" src={colorSharp} />
+
+    <img className="background-image-left" src={colorSharp} alt="Image" />
+
 </section>
+
+
         )
 
 

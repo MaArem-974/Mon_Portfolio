@@ -30,7 +30,7 @@ return(
 
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled":""}>
     <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="#acceuil">
         <img src={logo} alt="logo"/> 
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -40,16 +40,15 @@ return(
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#acceuil" className={activeLink === 'acceuil'? 'active navbar-link':'navbar-link'} onClick={() => onUpdateActiveLink('acceuil')}>Accueil</Nav.Link>
-          <Nav.Link href="#competence" className={activeLink === 'competence'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('competences')}>Mes Competences</Nav.Link>
-          <Nav.Link href="#projets" className={activeLink === 'projet'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('projet')}>Projets</Nav.Link>
+          <Nav.Link href="#competences" className={activeLink === 'competences'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('competences')}>Competences</Nav.Link>
+          <Nav.Link href="#projets" className={activeLink === 'projets'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('projets')}>Projets</Nav.Link>
           <Nav.Link href="#veilleJ"className={activeLink === 'veilleJ'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('veilleJ')}>Veille Juridique</Nav.Link>
           <Nav.Link href="#veilleT"className={activeLink === 'veilleT'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('veilleT')}>Veille Technologique</Nav.Link>
         </Nav>
         <span className="navbar-text">
             <div className="social-icon">
-                <a href=""><img src={navIcon1} alt="" /></a>
-                <a href=""><img src={navIcon2} alt="" /></a>
-                <a href=""><img src={navIcon3} alt="" /></a>
+                <a href="https://www.facebook.com/keryan.mercadier"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.instagram.com/keryan_mk2/"><img src={navIcon3} alt="" /></a>
             </div>
 
             <a href={require("../assets/res/MonCV.pdf")} download="MonCV.pdf" target='_blank'>

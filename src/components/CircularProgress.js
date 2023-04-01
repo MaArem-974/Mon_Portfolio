@@ -14,7 +14,7 @@ const CircularProgress = ({ size, strokeWidth, percentage, color }) => {
   return (
     <svg width={size} height={size} viewBox={viewBox}>
       <circle
-        fill="none"
+        fill="black"
         stroke="#ccc"
         cx={size / 2}
         cy={size / 2}
@@ -31,7 +31,7 @@ const CircularProgress = ({ size, strokeWidth, percentage, color }) => {
         transform={`rotate(-90 ${size / 2} ${size / 2})`}
         strokeDasharray={[dash, circumference - dash]}
         strokeLinecap="round"
-        style={{ transition: "all 0.5s" }}
+        style={{ transition: "all 2.5s" }}
       />
       <text
         fill="black"
