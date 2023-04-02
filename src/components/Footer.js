@@ -10,23 +10,11 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={6} sm={6}>
+          <Col size={6} sm={6} className="text-center text-sm-start">
             <img src={logo} alt="Logo" />
           </Col>
-          <Col size={6} sm={2} className="text-center text-sm-end">
-
-            
-          </Col>
-
-          <Col size={6} sm={2} className="text-center text-sm-end">
-          </Col>
-
-          <Col size={6} sm={2} className="text-center text-sm-end">
-            <p><strong>Suviez moi sur mes reseaux</strong></p>
-            <div className="social-icon">
-            <a href="https://www.facebook.com/keryan.mercadier"><img src={navIcon2} alt="" /></a>
-            <a href="https://www.instagram.com/keryan_mk2/"><img src={navIcon3} alt="" /></a>
-            </div>
+          <Col size={4} sm={6} className="text-center text-sm-start"> 
+          <p><strong>Lorem ipsum</strong></p>
           </Col>
         </Row>
       </Container>

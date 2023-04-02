@@ -1,7 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-
 // Stage 1 images Import 
 import Stage1IMG1 from "../assets/img/Stage1/Gestionnaire de Formulaires NEOPSE BackOffice.PNG";
 import Stage1IMG2 from "../assets/img/Stage1/Gestionnaire de Formulaires NEOPSE BackOffice.PNG";
@@ -30,6 +29,7 @@ import Stage2IMG9 from "../assets/img/Stage1/Gestionnaire de Formulaires NEOPSE 
 
 
 import projImg11 from "../assets/img/Stage2/project-img1.png";
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 
@@ -153,11 +153,14 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+          <TrackVisibility>
+          {({ isVisible }) =>  
+              <div className={isVisible ? "animate__animated animate__zoomInUp": ""}>
                 <h2>Mes Projets</h2>
                 <p>Voici des captures ecran des projets que j'ai realisés en stage</p>
+                </div>
+                }
+            </TrackVisibility>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -167,19 +170,25 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Stage N°2</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+          
+          <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
+
+                          
+                          
                           Stage1.map((Stage1, index) => {
                             return (
-
                               <ProjectCard
                                 key={index}
                                 {...Stage1}
+                                
                                 />
                             )
                           })
+
+                          
                         }
                       </Row>
                     </Tab.Pane>
@@ -197,13 +206,8 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>

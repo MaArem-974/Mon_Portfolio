@@ -1,12 +1,14 @@
 import { useState,useEffect } from "react"
+import React from 'react';
 import { Container,Row,Col } from "react-bootstrap"
-import headerImg from '../assets/img/DevM.png'
-//import 'animate.css';
-//import TrackVisibility from 'react-on-screen';
+import headerImg1 from '../assets/img/Keryan.png'
+import headerImg2 from '../assets/img/header-img.png'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum,setLoopNum] = useState(0)
     const [isDeleting,setIsDeleting] = useState(false)
-    const toRotate = ["Développeur Web EN HERBE","Etudiant","Bon au jeux-video"];
+    const toRotate = ["développeur web","etudiant","bon au jeux-video","en BTS SIO"];
     const [text,setText] = useState('');
     const[delta,setDelta] = useState(300 - Math.random() * 100)
     const temps = 1000;
@@ -45,19 +47,56 @@ export const Banner = () => {
 return () => {clearInterval(ticker)};
 },[text])
 
+function Circle(){
+    return(
+      <div height="500" width="500">
+        <circle
+          cx="50"
+          cy="55"
+          r="45"
+          fill="none"
+          stroke="#F0CE01"
+          strokeWidth="14"
+        />
+      </div>
+    );
+   }
 
      return (
         <section className="banner" id="acceuil">
             <Container>
                 <Row className="align-item-center">
                     <Col xs={12} md={4} xl={7} >
-
+                        <TrackVisibility>
+                        {({ isVisible }) =>  
+                        <div className={isVisible ? "animate__animated animate__fadeInUpBig" : ""}>
                         <span className="tagline">Bienvenue sur mon portfolio</span>
                         <h1>{'Je suis Kéryan MERCADIER et je suis '}<span className="wrap"><div className="TextGen">{text}</div></span></h1>
                         <p>Je suis actuellement en BTS SIO option SLAM et voici mon portfolio</p>
+                        </div> }  
+                        </TrackVisibility>
                     </Col>
+
+
                     <Col xs={10} md={2} xl={4}>
-                  <img src={headerImg} alt="Header Img"/>
+                    <div class="circle" id="Moi">
+                        <p class="text"><img src={headerImg1} alt="Header Img"/></p>
+                        </div>
+                        
+
+                  
+
+
+                  <Col xs={10} md={2} xl={4}>
+                  <img src={headerImg2} alt="Header Img"/>
+                  <div class="circle" id="Spaceman">
+                        <p class="text"></p>
+                        </div>
+                      
+
+
+                  </Col>
+
 
                     </Col>
 
