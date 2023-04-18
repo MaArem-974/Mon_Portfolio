@@ -7,7 +7,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg'
 
 export const NavBar = () => {
 
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('acceuil');
     const [scrolled,seScrolled,] = useState(false);
     useEffect(() =>{
         const onScroll = () =>{
@@ -50,7 +50,7 @@ return(
                 <a href="https://www.facebook.com/keryan.mercadier"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/keryan_mk2/"><img src={navIcon3} alt="" /></a>
             </div>
-            <a className="testHover" href={require("../assets/res/MonCV.pdf")} download="MonCV.pdf" target='_blank'>
+            <a className="boutonDl" href={require("../assets/res/MonCV.pdf")} download="MonCV.pdf" target='_blank'>
       <button className={activeLink === 'CV'? 'active navbar-link':'navbar-link'}>Telecharger Mon CV</button>
     </a>
             </span>

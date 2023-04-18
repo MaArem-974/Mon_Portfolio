@@ -15,7 +15,7 @@ const CircularProgress = ({ size, strokeWidth, percentage, color }) => {
     <svg width={size} height={size} viewBox={viewBox}>
       <circle
         fill="black"
-        stroke="#ccc"
+        stroke="#FFFFFF"
         cx={size / 2}
         cy={size / 2}
         r={radius}
@@ -34,7 +34,7 @@ const CircularProgress = ({ size, strokeWidth, percentage, color }) => {
         style={{ transition: "all 2.5s" }}
       />
       <text
-        fill="black"
+        fill="white"
         fontSize="40px"
         x="50%"
         y="50%"

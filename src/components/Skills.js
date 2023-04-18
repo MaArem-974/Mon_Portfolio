@@ -9,12 +9,12 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
 
-// import required modules
+
 import { EffectCreative , Pagination, Navigation } from "swiper";
 export const Skills = () => {
 

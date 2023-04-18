@@ -23,7 +23,7 @@ export const ProjectCard = ({ title, description, imgUrl, animation }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <h4><span>{description}</span></h4>
-          <h4><span> <button onClick={() => test()  }> Agrandir <ArrowRightCircle size={25} /></button></span></h4>
+          <h4><span> <button onClick={() => Agrandir()  }> Agrandir <ArrowRightCircle size={25} /></button></span></h4>
         </div>
       </div>
       </div>}
@@ -34,7 +34,7 @@ export const ProjectCard = ({ title, description, imgUrl, animation }) => {
       
     
   )
-  function test(){
+  function Agrandir(){
     
     window.location.href = imgUrl;
 

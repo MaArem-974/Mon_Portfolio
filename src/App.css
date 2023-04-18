@@ -112,7 +112,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
   opacity: 1;
-  color: rgba(74, 47, 189, 0.5) !important;
+  color: rgba(18, 208, 151, 0.84) !important;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link a.nav-link.navbar-link:hover {
@@ -125,11 +125,12 @@ span.navbar-text {
 }
 
 
-.testHover:hover{
+.boutonDl:hover{
 display: block;
 transition: 0.6s ease-in-out;
 transform: scale3d(1.15, 1.15, 1.15);
 }
+.activeLink
 .social-icon {
     display: flex;
     margin-left: 14px;
@@ -158,17 +159,21 @@ transform: scale3d(1.15, 1.15, 1.15);
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
-    transform: scale(1);
     opacity: 0.9;
+    transform: scale3d(1.15, 1.15, 1.15);
 }
 .social-icon a img {
 	width: 50%;
 	z-index: 1;
 	transition: 0.4s ease-in-out;
 }
+
+
 .social-icon a:hover img {
 	filter: brightness(100%) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  transform: scale3d(1.15, 1.15, 1.15);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -262,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .wrap{
   font-size: 75px;
   letter-spacing: 0.8px;
-  opacity: 0.5;
+  opacity: 1;
   color: rgba(142, 24, 196, 0.85);
 }
 .banner .tagline {
@@ -325,8 +330,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 #Moi{
   display: inline-flex;
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -346,6 +351,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .swiper-slide:nth-child(n) {
   background: linear-gradient( rgba(102, 64, 123,0.5) , rgba(252, 41, 119,0.4) , rgba(251, 168, 214,0.7) );
+  
 }
 
 
@@ -441,7 +447,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgb(0,0,0);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -450,11 +456,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
-  padding: 17px 0;
+  padding: 23px 0;
   color: #fff;
   width: 100%;
   font-size: 17px;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.8px;
   font-weight: 500;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -470,26 +476,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: 0.3s ease-in-out;
+    transition: 0.6s ease-in-out;
+    display: block;
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
+
+
 }
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
+
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+  
+
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
+
 }
+.nav-link#projects-tabs-tab-third::before {
+  border-radius: 0 55px 55px 0;
+  transition: 0.5s ease-in-out;
+  border: hidden;
+  
+
+
+}
+
+
+.nav-link#projects-tabs-tab-first::before {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+  transition: 0.5s ease-in;
+  border: hidden;
+
+  }
+  
+
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -528,6 +555,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 1;
   width: 100%;
+  color: white;
 
 }
 .proj-imgbx:hover .proj-txtx {
@@ -570,14 +598,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 }
+.veilleJ h1{
+text-align: center;
+
+
+}
+#RGPD{
+  text-decoration: solid;
+  font-size: 40px;
+}
+
+#RGPD a{
+  text-decoration: none;
+  color: #14d42d;
+
+}
+
+#RGPD a:hover{
+
+  text-decoration: underline;
+  color: blue;
+  transition: 0.6s ease-in-out;
+
+}
+.veilleJ .contenu-vj {
+
+background: rgba(67, 12, 40, 0.54);
+font-size: 18px;
+border-radius: 14px;
+text-align: justify;
+display: block;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+
+  
+}
+
 
 .veilleJ .tagline {
   font-weight: 800;
   letter-spacing: 0.8px;
   padding: 16px 39px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 25px;
+  background-image: linear-gradient(to right, #382646, #00518f, #0083b6, #00b095, #14d42d);  font-size: 25px;
   margin-bottom: 26px;
   display: block;
   text-align: center;

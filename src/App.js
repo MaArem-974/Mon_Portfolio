@@ -16,8 +16,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <VeilleJ />
       <VeilleT />
+      <VeilleJ />
       <Footer />
     </div>
   );
