@@ -8,7 +8,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum,setLoopNum] = useState(0)
     const [isDeleting,setIsDeleting] = useState(false)
-    const toRotate = ["développeur web","etudiant","bon au jeux-video","en BTS SIO"];
+    const toRotate = ["développeur web","etudiant","en BTS SIO"];
     const [text,setText] = useState('');
     const[delta,setDelta] = useState(300 - Math.random() * 100)
     const temps = 1000;
@@ -72,7 +72,7 @@ function Circle(){
                         <div className={isVisible ? "animate__animated animate__fadeInUpBig" : ""}>
                         <span className="tagline">Bienvenue sur mon portfolio</span>
                         <h1>{'Je suis Kéryan MERCADIER et je suis '}<span className="wrap"><div className="TextGen">{text}</div></span></h1>
-                        <p>Je suis actuellement en BTS SIO option SLAM et voici mon portfolio</p>
+                        <p>Voici mon portfolio</p>
                         </div> }  
                         </TrackVisibility>
                     </Col>

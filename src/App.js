@@ -8,6 +8,8 @@ import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import { VeilleJ } from "./components/VeilleJ";
 import { VeilleT } from "./components/VeilleT";
+import { BTSSIO } from "./components/BTS SIO";
+import { Profil } from "./components/Profil";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Profil />
+      <BTSSIO />
       <Projects />
       <VeilleT />
       <VeilleJ />

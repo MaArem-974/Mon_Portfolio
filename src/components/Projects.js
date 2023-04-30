@@ -164,10 +164,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Stage N°1</Nav.Link>
+                      <Nav.Link eventKey="first">Stage N°1 SIO</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Stage N°2</Nav.Link>
+                      <Nav.Link eventKey="third">Stage N°2 SIO</Nav.Link>
                     </Nav.Item>
                   </Nav>
           

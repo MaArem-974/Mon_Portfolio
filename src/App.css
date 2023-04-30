@@ -100,14 +100,14 @@ nav.navbar.scrolled {
   background-color: #121212 !important;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 0%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: white !important;
   letter-spacing: 0.2px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 15px;
   opacity: 1;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
@@ -130,6 +130,12 @@ display: block;
 transition: 0.6s ease-in-out;
 transform: scale3d(1.15, 1.15, 1.15);
 }
+
+.boutonDl{
+
+  font-size: 5px !important;
+
+  }
 .activeLink
 .social-icon {
     display: flex;
@@ -671,6 +677,85 @@ padding-bottom: 10px;
   text-align: center;
 
 }
+
+/************ BTS SIO Css ************/
+
+.BTSSIO{
+
+  padding: 190px 0;
+  background-color: black;
+  display: block;
+
+
+}
+
+.BTSSIO .tagline {
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 16px 39px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  margin-bottom: 26px;
+  display: block;
+  text-align: center;
+
+}
+
+
+/************ Profil Css ************/
+
+.Profil{
+
+  padding:170px 0;
+  background: url('./assets/img/color-sharp.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  margin-left: 100px;
+  border-radius: 64px;
+  margin-top: 60px;
+
+}
+
+.Profil .Description{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  margin-left: 30px;
+  letter-spacing: 0.4px;
+  justify-content: center;
+  display: block;
+  font-size: 21px;
+  text-align: justify;
+
+}
+
+.Profil .tagline {
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 16px 39px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  margin-bottom: 36px;
+  display: block;
+  text-align: center;
+
+}
+
+.Profil h4 {
+
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: normal;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-transform: capitalize;
+}
+
+
 
 /************ Footer Css ************/
 .footer {
