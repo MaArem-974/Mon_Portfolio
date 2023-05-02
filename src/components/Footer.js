@@ -14,7 +14,6 @@ export const Footer = () => {
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={4} sm={6} className="text-center text-sm-start"> 
-          <p><strong>Lorem ipsum</strong></p>
           </Col>
         </Row>
       </Container>

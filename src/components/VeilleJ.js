@@ -24,7 +24,7 @@ export const VeilleJ = () => {
         <section className="veilleJ" id="veilleJ">
             <Container>
                 <Row className="align-item-center">
-                    <Col xs={12} md={4} xl={7} >
+                    <Col xl={6} >
                     <div className="veillej-bx">
                         <TrackVisibility>
                         {({ isVisible }) =>  
@@ -36,43 +36,55 @@ export const VeilleJ = () => {
 
                         </div> }  
                         </TrackVisibility>
-                        <TrackVisibility>
-                        {({ isVisible }) =>  
-                         <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
-                        <h1> Voici ma veille juridique qui va porter sur le <span id="RGPD"><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></span></h1>
-                        
+                        <h1>Veille sur le <span id="RGPD"><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></span></h1>
+
                         <div className="contenu-vj">
-                        <p>JLoremp ipsum Loremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsum</p>
-                        <p>JLoremp ipsum Loremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsum</p>
-                        <p>JLoremp ipsum Loremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsum</p>
-                        <p>JLoremp ipsum Loremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsumLoremp ipsum</p>
+                        <p> Qu'est ce que le RGPD ? : LOREM IPSUM
+                        
+                    Voici une veille juridique sur le RGPD (Règlement Général sur la Protection des Données) :
+
+Les exigences légales du RGPD pour les entreprises et organisations, notamment en matière de protection des données personnelles.
+
+Les droits des individus en vertu du RGPD, y compris le droit d'accès, le droit à l'oubli, le droit à la portabilité des données et le droit de rectification.
+
+Les obligations des entreprises et organisations en matière de consentement des utilisateurs, de notification des violations de données et de mise en place de mesures de sécurité.
+
+Les sanctions possibles en cas de violation du RGPD, notamment des amendes et des sanctions pénales.
+
+Les implications du RGPD pour les entreprises internationales qui collectent et traitent des données de citoyens européens.
+
+Les mises à jour et les modifications du RGPD et les implications pour les entreprises et les organisations.
+
+Les meilleures pratiques pour la conformité au RGPD, notamment la mise en place de politiques de confidentialité et de protection des données et la désignation d'un délégué à la protection des données.
+
+Les tendances émergentes dans le domaine de la protection des données, y compris les développements technologiques tels que la blockchain et l'intelligence artificielle et leur impact sur la conformité au RGPD.
+
+Les approches des autorités de régulation en matière d'application du RGPD, notamment les enquêtes et les sanctions imposées aux entreprises et organisations.
+
+Les évolutions réglementaires et législatives connexes, notamment les lois nationales et européennes sur la protection des données.
+
+En gardant une veille sur ces sujets, les entreprises et organisations peuvent s'assurer qu'elles sont conformes aux exigences du RGPD et éviter les sanctions en cas de violation des règles de protection des données personnelles.</p>
+                       
                         </div>
-                        </div>}  
-                </TrackVisibility>
                 </div>
                     </Col>
 
 
-                    <Col xs={10} md={2} xl={4}>
+                    <Col xl={6}>
 
-                    <TrackVisibility>
-                        {({ isVisible }) =>  
-                         <div className={isVisible ? "animate__animated animate__fadeInTopRight" : ""}>            
+                              
 
                     <Swiper
-        effect={"cards"}
-        grabCursor={true}
+        grabCursor={true} 
         modules={[EffectCards]}
-        className="SwiperVeilleJ"
+        className="SwiperVeille"
 
         >
 
-        <SwiperSlide><img src={headerImg1} alt="Header Img"/></SwiperSlide>
-        <SwiperSlide><img src={headerImg1} alt="Header Img"/></SwiperSlide>
-        <SwiperSlide><img src={headerImg1} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
       </Swiper>
-      </div>}  
-                </TrackVisibility>
     
 
 

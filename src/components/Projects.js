@@ -83,22 +83,7 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: Stage1IMG9,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG10,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG11,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG12,
-    },
+    }
   ];
 
 
@@ -147,22 +132,7 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: Stage1IMG9,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG10,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG11,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: Stage1IMG12,
-    },
+    }
   ];
 
   const Stage2 = [
@@ -221,7 +191,7 @@ export const Projects = () => {
           {({ isVisible }) =>  
               <div className={isVisible ? "animate__animated animate__zoomInUp": ""}>
                 <h2>Mes Projets</h2>
-                <p>Voici des captures ecran des projets que j'ai realisés en stage</p>
+                <p>Voici des captures ecran des projets que j'ai fais en classe ou en stage</p>
                 </div>
                 }
             </TrackVisibility>

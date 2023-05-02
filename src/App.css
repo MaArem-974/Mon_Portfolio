@@ -321,17 +321,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 
- #Spaceman{
-  display: inline-flex;
-  background-image: url('./assets/img/lune.png');
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  color: red;
-  line-height: 1.5em;
-}
 
 
 #Moi{
@@ -650,6 +639,25 @@ padding-bottom: 10px;
 }
 
 
+
+
+.swiper-slide-veille {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+
+
+}
+
+.SwiperVeille:nth-child(1n) {
+  background-color: transparent !important;
+  
+}
+
+
 .veilleJ .tagline {
   font-weight: 800;
   letter-spacing: 0.8px;
@@ -670,43 +678,37 @@ padding-bottom: 10px;
 
 
 }
+.veilleT h1{
+  text-align: center;
+  
+  
+  }
 
 .veilleT .tagline {
   font-weight: 800;
   letter-spacing: 0.8px;
   padding: 16px 39px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 25px;
+  background-image: linear-gradient(to right, #382646, #00518f, #0083b6, #00b095, #14d42d);  font-size: 25px;
   margin-bottom: 26px;
   display: block;
   text-align: center;
 
 }
+.veilleT .contenu-vt {
 
-/************ BTS SIO Css ************/
-
-.BTSSIO{
-
-  padding: 190px 0;
-  background-color: black;
+  background: rgba(67, 12, 40, 0.54);
+  font-size: 18px;
+  border-radius: 14px;
+  text-align: justify;
   display: block;
-
-
-}
-
-.BTSSIO .tagline {
-  font-weight: 800;
-  letter-spacing: 0.8px;
-  padding: 16px 39px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 25px;
-  margin-bottom: 26px;
-  display: block;
-  text-align: center;
-
-}
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  
+    
+  }
 
 
 /************ Profil Css ************/
