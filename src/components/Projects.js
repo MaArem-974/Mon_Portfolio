@@ -101,6 +101,70 @@ export const Projects = () => {
     },
   ];
 
+
+  const Projet = [
+    {
+      title: "Site NEOPSE",
+      description: "Aperçu de l'outil NEOPSE",
+      imgUrl: Stage1IMG1,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG3,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG4,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG5,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG6,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG7,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG8,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG9,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG10,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG11,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: Stage1IMG12,
+    },
+  ];
+
   const Stage2 = [
     {
       title: "Site NEOPSE",
@@ -167,6 +231,9 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">Stage N°1 SIO</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
+                      <Nav.Link eventKey="second">Projets fais en classe</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
                       <Nav.Link eventKey="third">Stage N°2 SIO</Nav.Link>
                     </Nav.Item>
                   </Nav>
@@ -192,6 +259,21 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
+
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {
+                          Projet.map((Projet, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...Projet}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <Row>
                         {
@@ -206,6 +288,8 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
+
+
                   </Tab.Content>
                 </Tab.Container>
           </Col>

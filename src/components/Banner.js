@@ -72,7 +72,6 @@ function Circle(){
                         <div className={isVisible ? "animate__animated animate__fadeInUpBig" : ""}>
                         <span className="tagline">Bienvenue sur mon portfolio</span>
                         <h1>{'Je suis Kéryan MERCADIER et je suis '}<span className="wrap"><div className="TextGen">{text}</div></span></h1>
-                        <p>Voici mon portfolio</p>
                         </div> }  
                         </TrackVisibility>
                     </Col>
@@ -87,15 +86,6 @@ function Circle(){
                   
 
 
-                  <Col xs={10} md={2} xl={4}>
-                  <img src={headerImg2} alt="Header Img"/>
-                  <div class="circle" id="Spaceman">
-                        <p class="text"></p>
-                        </div>
-                      
-
-
-                  </Col>
 
 
                     </Col>

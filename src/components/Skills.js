@@ -51,7 +51,7 @@ export const Skills = () => {
                 <h2>
                     Compétences
                 </h2>
-                <p>Voici mes Compétences dans differents domaines que j'ai appris  </p>
+                <p>Voici mes Compétences dans differents domaines que j'ai appris </p>
             
             <Swiper
         responsive={responsive}
@@ -82,6 +82,29 @@ export const Skills = () => {
         color="#4A2FBD"
       />
 <h5>PHP</h5>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+              <div className="item">
+<CircularProgress
+        size={240}
+        strokeWidth={25}
+        percentage={75}
+        color="#4A2FBD"
+      />
+<h5>VirtualBox</h5>
+</div>
+</SwiperSlide>
+
+<SwiperSlide>
+              <div className="item">
+<CircularProgress
+        size={240}
+        strokeWidth={25}
+        percentage={55}
+        color="#4A2FBD"
+      />
+<h5>Symfony</h5>
 </div>
 </SwiperSlide>
 
@@ -115,7 +138,7 @@ export const Skills = () => {
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={30}
+        percentage={65}
         color="#4A2FBD"
       />
                 <h5>CSS</h5>
@@ -126,7 +149,7 @@ export const Skills = () => {
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={50}
+        percentage={65}
         color="#4A2FBD"
       />
                 <h5>JavaScript</h5>
@@ -149,7 +172,7 @@ export const Skills = () => {
                 <CircularProgress
         size={240}
         strokeWidth={25}
-        percentage={40}
+        percentage={60}
         color="#4A2FBD"
       />
                 <h5>Docker</h5>

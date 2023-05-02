@@ -40,8 +40,7 @@ return(
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#acceuil" className={activeLink === 'acceuil'? 'active navbar-link':'navbar-link'} onClick={() => onUpdateActiveLink('acceuil')}>Accueil</Nav.Link>
-          <Nav.Link href="#Profil" className={activeLink === 'Profil'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('competences')}>Profil</Nav.Link>
-          <Nav.Link href="#BTSSIO" className={activeLink === 'BTSSIO'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('competences')}>BTS SIO</Nav.Link>
+          <Nav.Link href="#Profil" className={activeLink === 'Profil'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('Profil')}>Profil</Nav.Link>
           <Nav.Link href="#competences" className={activeLink === 'competences'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('competences')}>Competences</Nav.Link>
           <Nav.Link href="#projets" className={activeLink === 'projets'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('projets')}>Projets</Nav.Link>
           <Nav.Link href="#veilleJ"className={activeLink === 'veilleJ'? 'active navbar-link':'navbar-link' }onClick={() => onUpdateActiveLink('veilleJ')}>Veille Juridique</Nav.Link>
