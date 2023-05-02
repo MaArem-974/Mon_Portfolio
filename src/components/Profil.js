@@ -8,15 +8,23 @@ export const Profil = () => {
 
 
      return (
+
         <section className="Profil" id="Profil">
-            <TrackVisibility>
-                        {({ isVisible }) =>  
-                        <div className={isVisible ? "animate__animated animate__fadeInUpBig" : ""}>
-            <Container>
-            <span className="tagline">Mon Profil</span>
+  <Container>
                 <Row className="align-item-center">
                     <Col xl={6} >
+                    <TrackVisibility>
+                                {({ isVisible }) =>  
+                        <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
+
+
+
+            <span className="tagline">Mon Profil</span>
+            </div>}   
+  
+  </TrackVisibility>
                         <h4>{"– A PROPOS DE MOI" }</h4>
+                        
                         <p className="Description">
 
                         Je m’appelle Keryan MERCADIER, j’ai 19 ans. Je suis actuellement en BTS SIO au Lycée Nelson Mandela de Saint-Benoît en BTS SIO option SLAM.
@@ -56,9 +64,6 @@ J’ai effectué 2 stage en première et deuxième année de BTS SIO specialité
                 </Row>
 
             </Container>
-            </div>    
-}  
-            </TrackVisibility>
         
         </section>
     )
