@@ -178,8 +178,21 @@ export const Skills = () => {
                 <h5>Docker</h5>
                 </div>
                 </SwiperSlide> 
+                <SwiperSlide>
+                <div className="item">
+                <CircularProgress
+        size={240}
+        strokeWidth={25}
+        percentage={65}
+        color="#4A2FBD"
+      />
+                <h5>Android Studio</h5>
+                </div>
+                </SwiperSlide> 
                 </Swiper>
                 </div>
+
+                
             
             </Col>
 
