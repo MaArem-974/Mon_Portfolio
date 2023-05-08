@@ -56,7 +56,7 @@ J’ai effectué 2 stage en première et deuxième année de BTS SIO specialité
 <p className="Description">   
 <h4>{"– PROJETS PROFESSIONNELS" }</h4>
 - Développement d’un site web via l'outil NEOPSE (CMS special pour les communes) en 2022 <br></br> <br></br>
-- Développement d’un site web de gestion de bac a composte pour aider le service environement <br></br> ( - PHP - HTML - CSS(Bootstrap) - JS) en 2022
+- Développement d’un site web de gestion de bac a composte pour aider le service environement <br></br> ( - PHP - HTML - CSS(Bootstrap) - JS) en 2023
 </p>
                     
                     </Col>

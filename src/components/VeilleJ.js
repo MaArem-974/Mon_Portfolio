@@ -1,7 +1,10 @@
 import { useState,useEffect,useRef } from "react"
 import { Container,Row,Col } from "react-bootstrap"
-import headerImg1 from '../assets/img/Keryan.png'
-import headerImg2 from '../assets/img/header-img.png'
+import img1 from '../assets/img/veilleJ/RGPD.jpg'
+import img2 from '../assets/img/veilleJ/RGPD Données .jpg'
+import img3 from '../assets/img/veilleJ/Sanctions.png'
+import img4 from '../assets/img/veilleJ/Amende.jpeg'
+import img5 from '../assets/img/veilleJ/RGPD Etape.jpg'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -24,7 +27,7 @@ export const VeilleJ = () => {
         <section className="veilleJ" id="veilleJ">
             <Container>
                 <Row className="align-item-center">
-                    <Col xl={6} >
+                    <Col xxl={6} >
                     <div className="veillej-bx">
                         <TrackVisibility>
                         {({ isVisible }) =>  
@@ -39,38 +42,40 @@ export const VeilleJ = () => {
                         <h1>Veille sur le <span id="RGPD"><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></span></h1>
 
                         <div className="contenu-vj">
-                        <p> Qu'est ce que le RGPD ? : LOREM IPSUM
-                        
-                    Voici une veille juridique sur le RGPD (Règlement Général sur la Protection des Données) :
+                        <p> <h3>Qu'est ce que le RGPD ?</h3> <br></br> 
+ Le RGPD est un ensemble de loi qui encadre le traitement des données personnelles sur le territoire de l'Union européenne. <br></br> 
 
-Les exigences légales du RGPD pour les entreprises et organisations, notamment en matière de protection des données personnelles.
+Le RGPD exige des entreprise et des organisation à être plus transparent dans leur traitement vis à vis des <stong>données personnelles ou sensible.</stong> <br></br> 
 
-Les droits des individus en vertu du RGPD, y compris le droit d'accès, le droit à l'oubli, le droit à la portabilité des données et le droit de rectification.
+<h3>Qu'est ce qu'une données personnelles ou sensible ?</h3> <br></br>
 
-Les obligations des entreprises et organisations en matière de consentement des utilisateurs, de notification des violations de données et de mise en place de mesures de sécurité.
+On parle de <strong> donnée personnelle</strong>, ou plutôt de donnée à caractère personnel, quand il s’agit d’une information se rapportant à un individu, qui est déjà identifié ou peut l’être, de façon directe ou indirecte. Elles concernent les personnes physiques et vivantes. Enfin, plusieurs informations regroupées pour identifier une personne en particulier deviennent de fait des données à caractère personnel. (Nom,Prenom,Adresse ...)<br></br><br></br>
 
-Les sanctions possibles en cas de violation du RGPD, notamment des amendes et des sanctions pénales.
+<strong> Les donnees sensible</strong> sont quant a eux des données Ce sont des informations qui révèlent la prétendue origine raciale ou ethnique, les opinions politiques, les convictions religieuses <br></br><br></br>
 
-Les implications du RGPD pour les entreprises internationales qui collectent et traitent des données de citoyens européens.
+Les exigences légales du RGPD pour les entreprises et organisations sont : <br></br> 
+<strong>le droit d'accès</strong> (permet à une personne de savoir si des données qui la concernent sont traitées) <br></br> 
+<strong>le droit à l'oubli</strong> (Possibilite de demander l’effacement des donnée) <br></br> 
+<strong>le droit à la portabilité des données</strong> (vous offre la possibilité de récupérer une partie de vos données dans un format lisible par une machine) <br></br> 
+<strong>droit de rectification</strong> (rectifier, actualiser, des informations la concernant lorsqu'ont été décelées des erreurs, des inexactitudes) <br></br> <br></br>
+ 
+<h3>Les Sanctions</h3> <br></br>
 
-Les mises à jour et les modifications du RGPD et les implications pour les entreprises et les organisations.
+Les sanctions possibles en cas de violation du RGPD, notamment des amendes et des sanctions pénales. <br></br> <br></br>
+le montant des sanctions pécuniaires peut s'élever jusqu'à <strong> 20 millions d'euros </strong> ou dans le cas d'une entreprise jusqu'à  <strong>4 % </strong> du chiffre d'affaires annuel mondial <br></br> <br></br>
 
-Les meilleures pratiques pour la conformité au RGPD, notamment la mise en place de politiques de confidentialité et de protection des données et la désignation d'un délégué à la protection des données.
+<h3>Mise en Conformité</h3> <br></br>
+ Les meilleures pratiques pour la conformité au RGPD, notamment la mise en place de politiques de confidentialité et de protection des données et la désignation d'un délégué à la protection des données. (DPO) qui va vous accompagner pour la mise en conformité vis à vis du <strong>RGPD</strong> cela permettra à la CNIL qui est une autorité de régulation en france de valider ou pas votre mise en application du RGPD <br></br> <br></br>
 
-Les tendances émergentes dans le domaine de la protection des données, y compris les développements technologiques tels que la blockchain et l'intelligence artificielle et leur impact sur la conformité au RGPD.
-
-Les approches des autorités de régulation en matière d'application du RGPD, notamment les enquêtes et les sanctions imposées aux entreprises et organisations.
-
-Les évolutions réglementaires et législatives connexes, notamment les lois nationales et européennes sur la protection des données.
-
-En gardant une veille sur ces sujets, les entreprises et organisations peuvent s'assurer qu'elles sont conformes aux exigences du RGPD et éviter les sanctions en cas de violation des règles de protection des données personnelles.</p>
+Certaine évolution du RGPD peut entraîner une remise en conformité notamment les lois nationales et européennes sur la protection des données. En gardant une veille sur ces sujets, les entreprises et organisations peuvent s'assurer qu'elles sont conformes aux exigences du RGPD et éviter les sanctions en cas de violation des règles de protection des données personnelles. 
+</p>
                        
                         </div>
                 </div>
                     </Col>
 
 
-                    <Col xl={6}>
+                    <Col xxl={6}>
 
                               
 
@@ -81,9 +86,11 @@ En gardant une veille sur ces sujets, les entreprises et organisations peuvent s
 
         >
 
-        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
-        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
-        <SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={img1} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={img2} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={img3} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={img4} alt="Header Img"/></SwiperSlide>
+        <SwiperSlide className="swiper-slide-veille"><img src={img5} alt="Header Img"/></SwiperSlide>
       </Swiper>
     
 

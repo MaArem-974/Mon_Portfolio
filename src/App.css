@@ -345,7 +345,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .swiper-slide:nth-child(n) {
-  background: linear-gradient( rgba(102, 64, 123,0.5) , rgba(252, 41, 119,0.4) , rgba(251, 168, 214,0.7) );
+  background-image: linear-gradient(to right, #302034, #281b2d, #211626, #1a101f, #130818);
   
 }
 
@@ -375,15 +375,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
-.skill-slider {
-  width: 100%;
-  top: -30px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  animation: MonAnim 4s linear infinite;
-}
-
 .skill-slider {
   width: 100%;
   top: -30px;
@@ -625,7 +616,7 @@ text-align: center;
 .veilleJ .contenu-vj {
 
 background: rgba(67, 12, 40, 0.54);
-font-size: 18px;
+font-size: 19px;
 border-radius: 14px;
 text-align: justify;
 display: block;
@@ -636,6 +627,10 @@ padding-bottom: 10px;
 
 
   
+}
+.veilleJ .contenu-vj strong{
+  color: greenyellow;
+  font-style: italic;
 }
 
 
@@ -654,6 +649,8 @@ padding-bottom: 10px;
 
 .SwiperVeille:nth-child(1n) {
   background-color: transparent !important;
+  width: auto;
+  height: auto;
   
 }
 
@@ -710,6 +707,12 @@ padding-bottom: 10px;
     
   }
 
+  .veilleT .contenu-vt strong{
+    color: greenyellow;
+    font-style: italic;
+
+  }
+
 
 /************ Profil Css ************/
 
@@ -724,6 +727,7 @@ padding-bottom: 10px;
   margin-left: 100px;
   border-radius: 64px;
   margin-top: 60px;
+  margin-bottom: 160px;
 
 }
 

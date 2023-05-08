@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      <Skills />
       <Profil />
+      <Skills />
       <Projects />
       <VeilleT />
       <VeilleJ />

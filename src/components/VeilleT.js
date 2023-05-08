@@ -1,7 +1,6 @@
 import { useState,useEffect,useRef } from "react"
 import { Container,Row,Col } from "react-bootstrap"
-import headerImg1 from '../assets/img/Keryan.png'
-import headerImg2 from '../assets/img/header-img.png'
+import img1 from '../assets/img/veilleT/Keryan.png'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -29,7 +28,7 @@ export const VeilleT = () => {
                         <span className="tagline">Veille Technologique</span>
                         </div> }  
                         </TrackVisibility>
-                        <h1>Veille sur les <span id="RGPD"><a href="https://www.pure-illusion.com/lexique/definition-de-framework#" target="_blank">frameworks web</a></span></h1>
+                        <h1>Veille sur les <span id="RGPD"><a href="https://www.portageo.fr/blog/frameworks-developpeurs-web/" target="_blank">frameworks web</a></span></h1>
                         <div className="contenu-vt">
                         <p>qu'est ce qu'un frameworks ? : LOREM IPSUM
 
@@ -70,7 +69,9 @@ modules={[EffectCards]}
 className="SwiperVeille"
 
 >
-<SwiperSlide className="swiper-slide-veille"><img src={headerImg1} alt="Header Img"/></SwiperSlide>
+<SwiperSlide className="swiper-slide-veille"><img src={img1} alt="Header Img"/></SwiperSlide>
+<SwiperSlide className="swiper-slide-veille"><img src={img1} alt="Header Img"/></SwiperSlide>
+<SwiperSlide className="swiper-slide-veille"><img src={img1} alt="Header Img"/></SwiperSlide>
 </Swiper>
 
 
