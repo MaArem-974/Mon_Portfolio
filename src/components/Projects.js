@@ -109,7 +109,7 @@ export const Projects = () => {
       imgUrl: Proj1IMG2,
     },
     {
-      title: "Outil de gestion de projet",
+      title: "CMS",
       description: "Tableau comparatif des outil de gestion de projet",
       imgUrl: Proj1IMG3,
     },

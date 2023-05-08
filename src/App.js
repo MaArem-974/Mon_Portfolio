@@ -21,7 +21,6 @@ function App() {
       <Projects />
       <VeilleT />
       <VeilleJ />
-      <Contact />
       <Footer />
     </div>
   );
