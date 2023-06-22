@@ -10,7 +10,7 @@ import { VeilleJ } from "./components/VeilleJ";
 import { VeilleT } from "./components/VeilleT";
 import { Contact } from "./components/Contact";
 import { Profil } from "./components/Profil";
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 function App() {
   return (
     <div className="App">
@@ -19,8 +19,6 @@ function App() {
       <Profil />
       <Skills />
       <Projects />
-      <VeilleT />
-      <VeilleJ />
       <Footer />
     </div>
   );

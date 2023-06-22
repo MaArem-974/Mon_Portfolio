@@ -99,45 +99,21 @@ export const Projects = () => {
 
   const Projet = [
     {
-      title: "Initiation a Linux",
-      description: "Tuto pour s'initier a Linux",
-      imgUrl: Proj1IMG1,
-    },
-    {
-      title: "Initiation a Linux",
-      description: "Slide pour presenter Linux",
-      imgUrl: Proj1IMG2,
-    },
-    {
-      title: "CMS",
-      description: "Tableau comparatif des outil de gestion de projet",
-      imgUrl: Proj1IMG3,
-    },
-    {
-      title: "CMS",
-      description: "Slide comparatif des CMS",
-      imgUrl: Proj1IMG4,
-    },
-    {
-      title: "CMS",
-      description: "Trello",
+      title: " CMS",
+      description: "Gestion de projet grace a trello",
       imgUrl: Proj1IMG5,
-    },
-    {
-      title: "Livret Numerique",
-      description: "Synthèse",
-      imgUrl: Proj1IMG6,
-    },
-    {
-      title: "Livret Numerique",
-      description: "Schema BDD",
-      imgUrl: Proj1IMG10,
     },
     {
       title: "Livret Numerique",
       description: "Trello",
       imgUrl: Proj1IMG7,
     },
+    {
+      title: "Livret Numerique",
+      description: "Schema BDD",
+      imgUrl: Proj1IMG10,
+    },
+
     {
       title: "GSB",
       description: "Page de connexion PHP",
@@ -213,9 +189,8 @@ export const Projects = () => {
                 <h2>Mes Projets</h2>
                 <p>Voici des captures ecran des projets que j'ai fais en classe ou en stage <br></br><br></br>
                   - Refonte de site web grâce a NEOPSE <br></br><br></br>
-                  - Differents projets fais en classe <br></br><br></br>
-                  - Creation d'un site en php pour la gestion de bac a composte <br></br><br></br>
-
+                  - Differentes images de projets fais en classe <br></br><br></br>
+                  - Creation d'un site en php pour la gestion de bac a composte a la CIREST (PHP) pas de framework MVC utilisée ici comme par exemple Symfony mais j'ai utilisée Boostrap<br></br><br></br>
                 </p>
 
                 </div>
